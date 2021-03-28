@@ -1,0 +1,68 @@
+/* set basic attributes */
+body {
+  margin: 0px;
+  background-color: black;
+  font-family: monospace;
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/* main container */
+.container {
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+/* text content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* links */
+.header-links {
+  margin-top: 3vh;
+}
+
+/* links card container */
+.links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: space-around;
+}
+
+/* link item */
+.link-item {
+  margin-right: 1vw;
+}
+
+.link-item img {
+  width: 100%;
+  height: auto;
+}
+
+.link-item img:hover {
+  border: 3px solid green;
+}
+/*change to column when screen gets to small */
+@media screen and (max-width: 800px) {
+  .links-container {
+    flex-direction: column;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+}
